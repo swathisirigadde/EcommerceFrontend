@@ -84,7 +84,7 @@ frontend/
 Make sure your Spring Boot backend is running at:
 
 ```
-http://localhost:8080
+http://localhost:9090
 ```
 
 API used in frontend:
