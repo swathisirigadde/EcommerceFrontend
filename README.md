@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 📦 E-Commerce Product Catalog - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend** of the E-Commerce Product Catalog built using **React.js**, **CSS**, and **Axios**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📁 Folder Structure
 
-### `npm start`
+```
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AdminPanel.js
+│   │   ├── Login.js
+│   │   ├── ProductDetails.js
+│   │   ├── ProductList.js
+│   │   └── ProductList.css
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+└── package.json
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+* 🔍 View all products in a grid
+* 📄 View detailed product info
+* 🔐 Admin-only access to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * ➕ Add a product
+  * ❌ Delete a product
+* 🔎 Search by product name or category
+* 🧠 Simulated Login via `localStorage`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧑‍💻 Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React.js
+* Axios
+* HTML5/CSS3
+* Bootstrap (optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the frontend directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd frontend
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Open your browser at [http://localhost:3000](http://localhost:3000)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Test Credentials (for demo)
 
-### Analyzing the Bundle Size
+* User: no login needed (default)
+* Admin:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  * Select role `admin` from dropdown in the login form
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Backend API Endpoint
 
-### Advanced Configuration
+Make sure your Spring Boot backend is running at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+http://localhost:8080
+```
 
-### Deployment
+API used in frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* `GET /products`
+* `GET /products/{id}`
+* `POST /products` *(admin only)*
+* `DELETE /products/{id}` *(admin only)*
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
